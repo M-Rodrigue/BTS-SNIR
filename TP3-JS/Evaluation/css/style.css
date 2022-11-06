@@ -1,0 +1,22 @@
+/* Titre */
+h1 {
+  color : red;
+  font-size: 5em;
+}
+
+/* Paragraphe */
+p {
+  color : blue;
+  font-size: 2em;
+}
+#r {
+  color : green;
+  font-size: 2em;
+}
+#it {
+  color : red;
+  font-size: 2em;
+}
+
+/* JS */
+/* 3em size */

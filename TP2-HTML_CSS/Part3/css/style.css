@@ -1,0 +1,16 @@
+/* Elements */
+h1 {
+  color: blue;
+  font-size: 12.5em;
+}
+
+/* Class */
+.bacon {
+  background-color: green;
+}
+.broccoli {
+  background-color: yellow;
+}
+.circular {
+  border-radius: 100%;
+}

@@ -1,0 +1,140 @@
+#!/bin/bash
+#Programme table multiplication - MOREL Rodrigue
+
+echo "Programme table de multiplication"
+echo -n "La table de "
+read number
+
+if [ $number = "1" ]
+then
+	echo "1 * 0 = 0"
+	echo "1 * 1 = 1"
+	echo "1 * 2 = 2"
+	echo "1 * 3 = 3"
+	echo "1 * 4 = 4"
+	echo "1 * 5 = 5"
+	echo "1 * 6 = 6"
+	echo "1 * 7 = 7"
+	echo "1 * 8 = 8"
+	echo "1 * 9 = 9"
+	echo "1 * 10 = 10"
+elif [ $number = "2" ]
+then
+	echo "2 * 0 = 0"
+	echo "2 * 1 = 2"
+	echo "2 * 2 = 4"
+	echo "2 * 3 = 6"
+	echo "2 * 4 = 8"
+	echo "2 * 5 = 10"
+	echo "2 * 6 = 12"
+	echo "2 * 7 = 14"
+	echo "2 * 8 = 16"
+	echo "2 * 9 = 18"
+	echo "2 * 10 = 20"
+elif [ $number = "3" ]
+then
+        echo "3 * 0 = 0"
+        echo "3 * 1 = 3"
+        echo "3 * 2 = 6"
+        echo "3 * 3 = 9"
+        echo "3 * 4 = 12"
+        echo "3 * 5 = 15"
+        echo "3 * 6 = 18"
+        echo "3 * 7 = 21"
+        echo "3 * 8 = 24"
+        echo "3 * 9 = 27"
+        echo "3 * 10 = 30"
+elif [ $number = "4" ]
+then
+	echo "4 * 0 = 0"
+        echo "4 * 1 = 4"
+        echo "4 * 2 = 8"
+        echo "4 * 3 = 12"
+        echo "4 * 4 = 16"
+        echo "4 * 5 = 20"
+        echo "4 * 6 = 24"
+        echo "4 * 7 = 28"
+        echo "4 * 8 = 32"
+        echo "4 * 9 = 36"
+        echo "4 * 10 = 40"
+elif [ $number = "5" ]
+then
+        echo "5 * 0 = 0"
+        echo "5 * 1 = 5"
+        echo "5 * 2 = 10"
+        echo "5 * 3 = 15"
+        echo "5 * 4 = 20"
+        echo "5 * 5 = 25"
+        echo "5 * 6 = 30"
+        echo "5 * 7 = 35"
+        echo "5 * 8 = 40"
+        echo "5 * 9 = 45"
+        echo "5 * 10 = 50"
+elif [ $number = "6" ]
+then
+        echo "6 * 0 = 0"
+        echo "6 * 1 = 6"
+        echo "6 * 2 = 12"
+        echo "6 * 3 = 18"
+        echo "6 * 4 = 24"
+        echo "6 * 5 = 30"
+        echo "6 * 6 = 36"
+        echo "6 * 7 = 42"
+        echo "6 * 8 = 48"
+        echo "6 * 9 = 54"
+        echo "6 * 10 = 60"
+elif [ $number = "7" ]
+then
+        echo "7 * 0 = 0"
+        echo "7 * 1 = 7"
+        echo "7 * 2 = 14"
+        echo "7 * 3 = 21"
+        echo "7 * 4 = 28"
+        echo "7 * 5 = 35"
+        echo "7 * 6 = 42"
+        echo "7 * 7 = 49"
+        echo "7 * 8 = 56"
+        echo "7 * 9 = 63"
+        echo "7 * 10 = 70"
+elif [ $number = "8" ]
+then
+        echo "8 * 0 = 0"
+        echo "8 * 1 = 8"
+        echo "8 * 2 = 16"
+        echo "8 * 3 = 24"
+        echo "8 * 4 = 32"
+        echo "8 * 5 = 40"
+        echo "8 * 6 = 48"
+        echo "8 * 7 = 56"
+        echo "8 * 8 = 64"
+        echo "8 * 9 = 72"
+        echo "8 * 10 = 80"
+elif [ $number = "9" ]
+then
+        echo "9 * 0 = 0"
+        echo "9 * 1 = 9"
+        echo "9 * 2 = 18"
+        echo "9 * 3 = 27"
+        echo "9 * 4 = 36"
+        echo "9 * 5 = 45"
+        echo "9 * 6 = 54"
+        echo "9 * 7 = 63"
+        echo "9 * 8 = 72"
+        echo "9 * 9 = 81"
+        echo "9 * 10 = 90"
+elif [ $number = "10" ]
+then
+        echo "10 * 0 = 0"
+        echo "10 * 1 = 10"
+        echo "10 * 2 = 20"
+        echo "10 * 3 = 30"
+        echo "10 * 4 = 40"
+        echo "10 * 5 = 50"
+        echo "10 * 6 = 60"
+        echo "10 * 7 = 70"
+        echo "10 * 8 = 80"
+        echo "10 * 9 = 90"
+        echo "10 * 10 = 100"
+else
+	echo "Erreur"
+fi

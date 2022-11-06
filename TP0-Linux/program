@@ -1,0 +1,11 @@
+echo -n "Donnez moi votre nom :"
+read nom
+echo -n "Donnez moi votre prénom :"
+read prenom
+echo "Bonjour "$nom $prenom
+
+
+
+
+
+

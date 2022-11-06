@@ -1,0 +1,8 @@
+#!/bin/bash
+#Notre premier programme en shell, ceci est commentaire
+echo bonjour le monde
+echo -n donnez moi votre nom svp :
+read nom
+echo -n donnez moi votre prenom svp :
+read prenom
+echo Bonjour $nom $prenom
