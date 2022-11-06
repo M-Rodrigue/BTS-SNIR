@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/BombA.bmp</file>
+        <file>Images/BombB.bmp</file>
+        <file>Images/Explode.bmp</file>
+        <file>Images/Invader1A.bmp</file>
+        <file>Images/Invader1B.bmp</file>
+        <file>Images/Invader2A.bmp</file>
+        <file>Images/Invader2B.bmp</file>
+        <file>Images/Invader3A.bmp</file>
+        <file>Images/Invader3B.bmp</file>
+        <file>Images/Tir.bmp</file>
+        <file>Images/Vaisseau.bmp</file>
+    </qresource>
+</RCC>
