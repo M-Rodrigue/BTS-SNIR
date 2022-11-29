@@ -15,11 +15,11 @@ public:
     explicit DialogLogin(QWidget *parent = 0);
     ~DialogLogin();
 
-private slots:
-    void on_buttonBox_accepted();
-
 private:
     Ui::DialogLogin *ui;
+
+private slots:
+    void on_buttonBox_accepted();
 };
 
 #endif // DIALOGLOGIN_H

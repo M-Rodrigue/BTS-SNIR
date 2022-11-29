@@ -1,2 +1,0 @@
-# TP4-MySQL
-BTS SNIR2 - L

@@ -1,10 +1,9 @@
 #include "dialoglogin.h"
 #include "ui_dialoglogin.h"
-#include "qdebug.h"
-
+#include <QMessageBox>
 #include <QSqlDatabase>
+#include <QDebug>
 #include <QSqlQuery>
-#include <qmessagebox.h>
 
 DialogLogin::DialogLogin(QWidget *parent) :
     QDialog(parent),
@@ -34,7 +33,7 @@ void DialogLogin::on_buttonBox_accepted()
             QString user= ui->lineEditUser->text(); //lecture du lineEdit user
             QString password = ui->lineEditPassword->text();
             QSqlQuery query(db);
-            if(!query.exec("SELECT password,id_login ... '"+user+"'")){
+            if(!query.exec("SELECT password,id_login FROM login WHERE user= '"+user+"'")){
                 QMessageBox::critical(this,"Attention","Problème requête",QMessageBox::Ok);
             } else {
                 while(query.next()){

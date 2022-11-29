@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -23,10 +24,12 @@ QT_BEGIN_NAMESPACE
 class Ui_DialogLogin
 {
 public:
-    QVBoxLayout *verticalLayout_2;
+    QGridLayout *gridLayout;
+    QLabel *label_3;
+    QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
-    QLineEdit *lineEditUser;
+    QLineEdit *LineEditUser;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
     QLineEdit *lineEditPassword;
@@ -36,10 +39,23 @@ public:
     {
         if (DialogLogin->objectName().isEmpty())
             DialogLogin->setObjectName(QStringLiteral("DialogLogin"));
-        DialogLogin->resize(400, 300);
-        DialogLogin->setAutoFillBackground(false);
-        verticalLayout_2 = new QVBoxLayout(DialogLogin);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        DialogLogin->resize(791, 296);
+        gridLayout = new QGridLayout(DialogLogin);
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        label_3 = new QLabel(DialogLogin);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        QFont font;
+        font.setFamily(QStringLiteral("Verdana"));
+        font.setPointSize(15);
+        font.setBold(true);
+        font.setWeight(75);
+        label_3->setFont(font);
+        label_3->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_3, 0, 0, 1, 1);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         label = new QLabel(DialogLogin);
@@ -47,14 +63,13 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        lineEditUser = new QLineEdit(DialogLogin);
-        lineEditUser->setObjectName(QStringLiteral("lineEditUser"));
-        lineEditUser->setEchoMode(QLineEdit::Normal);
+        LineEditUser = new QLineEdit(DialogLogin);
+        LineEditUser->setObjectName(QStringLiteral("LineEditUser"));
 
-        horizontalLayout->addWidget(lineEditUser);
+        horizontalLayout->addWidget(LineEditUser);
 
 
-        verticalLayout_2->addLayout(horizontalLayout);
+        verticalLayout->addLayout(horizontalLayout);
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
@@ -70,14 +85,18 @@ public:
         horizontalLayout_2->addWidget(lineEditPassword);
 
 
-        verticalLayout_2->addLayout(horizontalLayout_2);
+        verticalLayout->addLayout(horizontalLayout_2);
 
         buttonBox = new QDialogButtonBox(DialogLogin);
         buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setCursor(QCursor(Qt::PointingHandCursor));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
-        verticalLayout_2->addWidget(buttonBox);
+        verticalLayout->addWidget(buttonBox);
+
+
+        gridLayout->addLayout(verticalLayout, 1, 0, 1, 1);
 
 
         retranslateUi(DialogLogin);
@@ -90,8 +109,11 @@ public:
     void retranslateUi(QDialog *DialogLogin)
     {
         DialogLogin->setWindowTitle(QApplication::translate("DialogLogin", "Dialog", nullptr));
-        label->setText(QApplication::translate("DialogLogin", "Identifiant", nullptr));
+        label_3->setText(QApplication::translate("DialogLogin", "BIENVENUE", nullptr));
+        label->setText(QApplication::translate("DialogLogin", "Utilisateur", nullptr));
+        LineEditUser->setPlaceholderText(QApplication::translate("DialogLogin", "Taper votre identifiant ici", nullptr));
         label_2->setText(QApplication::translate("DialogLogin", "Mot de passe", nullptr));
+        lineEditPassword->setPlaceholderText(QApplication::translate("DialogLogin", "Taper votre mot de passe ici", nullptr));
     } // retranslateUi
 
 };
